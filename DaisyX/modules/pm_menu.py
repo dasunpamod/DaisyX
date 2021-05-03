@@ -77,18 +77,18 @@ async def get_start_func(message, strings, edit=False):
     buttons.add(
         InlineKeyboardButton(strings["btn_lang"], callback_data="lang_btn"),
         InlineKeyboardButton(
-            strings["btn_source"], url="https://github.com/TeamDaisyX/"
+            strings["btn_source"], url="https://t.me/hypertechsl"
         ),
     )
     buttons.add(
-        InlineKeyboardButton(strings["btn_channel"], url="https://t.me/DaisyXUpdates"),
+        InlineKeyboardButton(strings["btn_channel"], url="https://t.me/hypertechlk"),
         InlineKeyboardButton(
-            "👥 Support Grup", url="https://t.me/DaisySupport_Official"
+            "👥 Support Grup", url="https://t.me/hypertechsl"
         ),
     )
     buttons.add(
         InlineKeyboardButton(
-            "👸🏼 Add DaisyX to your group",
+            "👸🏼 Add Hyper to your group",
             url=f"https://telegram.me/daisyxbot?startgroup=true",
         )
     )
@@ -131,7 +131,7 @@ async def help_cmd(message, strings):
 async def help_cmd_g(message, strings):
     text = strings["btn_group_help"]
     button = InlineKeyboardMarkup().add(
-        InlineKeyboardButton(text=text, url="https://t.me/DaisyXBOT?start")
+        InlineKeyboardButton(text=text, url="/help")
     )
     await message.reply(strings["help_header"], reply_markup=button)
 
